@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<!-- TITLE -->
+
+				<section>
+					<h2 style="color:  yellow">CRB Damage Detector Model</h2>
+
+					<p><a href="mailto:aubreymoore@gmail.com">Aubrey Moore</a><br>University of Guam</p>
+
+					<img class="r-stretch" src="../images/eve.png">
+
+					<p>Coconut Rhinoceros Beetle Science Symposium<br>October 23, 2025</p>
+
+					<p style="font-size: 0.5em;">Online at <a href="https://aubreymoore.github.io/CRB-damage-detector-2025/reveal.js/CRB-damage-detector-2025.html">https://aubreymoore.github.io/CRB-damage-detector-2025/reveal.js/CRB-damage-detector-2025.html</a></p>
+				</section>
+
+				<!-- FUNDERS
+
+				<section>
+					Delimiting survey				
+				</section>
+
+				<section>
+					<h2>Island wide trapping</h2>
+				</section>
+
+				<section>
+					<h2>CRB detector dogs</h2>
+				</section>
+
+				<section>
+					<h2>Visual damage surveys</h2>
+				</section>
+
+				<section>
+					<h2>Automated damage surveys</h2>
+				</section>
+
+				<section>
+					<h2>Original CRB damage detector model</h2>
+				</section>
+				<section>
+					<h2>Model improvements</h2>
+				</section>
+
+				<section>
+					<h2>Summary and conclusions</h2>
+				</section>
+			-->
+
+
+
+				<!-- OUTLINE
+
+				<section>
+					<ul>
+						<li style="color: yellow;">CRB Biology
+						<ul>
+							<li style="color:silver">Taxonomy
+							<li style="color:silver;">Geographic range
+							<li style="color:silver;">Life cycle and population dynamics
+						</ul>
+						<li style="color: yellow;">CRB Monitoring
+						<ul>
+							<li style="color: silver;">Pheromone traps
+							<li style="color: silver;">Damage surveys
+						</ul>
+						<li style="color: yellow;">CRB Management
+						<ul>
+							<li style="color: silver;">Eradication
+							<li style="color: silver;">Sanitation
+							<li style="color: silver;">Biological control
+						</ul>
+						<li style="color: yellow;">Concluding remarks
+					</ul>
+				</section>
+				-->
+
+				<section>
+					Eve<br>
+					<img class="r-stretch" src="../images/eve.png">
+				</section>
+
+				<!-- ground zero -->
+				<section>
+					<img class="r-stretch" src="../images/ground_zero.png">
+				</section>
+
+				<!--delimiting survey -->
+				<section>
+					<img class="r-stretch" src="../images/delimiting_survey.png">
+				</section>
+
+				<section>
+					<h4>Delimiting Survey and Initial Management Actions</h4>
+					<ul>
+						<li>Based on delimiting survey results, eradication was attempted.
+						<li>Detection and destruction of breeding sites was our main tactic. Detector dogs were deployed between Jul-2009 and Nov-2011.
+						<li>Mass trapping using pheromone traps failed to provide population suppression.
+						<li>Pheromone traps were used for island-wide monitoring between Oct-2007 and May-2015. 
+					</ul>
+				</section>
+
+				<section>
+					<img class="r-stretch" src="../images/detector_dogs.png">
+				</section>
+
+				<section>
+					<img class="r-stretch" src="../images/dog_finds_crb.png">
+				</section>
+
+				<!-- pic of pheromone trap and blurb?? -->
+
+				<!-- island wide trapping -->
+				<section>
+					<img class="r-stretch" src="../images/trap_catch_map.png">
+				</section>
+
+				
+
+
+
+
+
+
+
+				<!--
+				<section>
+					<img class="r-stretch" src="../images/eve.png">
+					<ul>
+						<li><font color=red>Coleoptera</font> "beetles"; 400,000 sp.
+						<ul>
+							<li><font color=red>Scarabaeidae</font> "scarab beetles"; 35,000 sp.
+							<ul>
+								<li><font color=red>Dynastinae</font> "rhinoceros beetles"; 1,500 sp.
+								<ul>
+									<li><font color=red><em>Oryctes</em></font> 45 sp.
+									<ul>
+										<li><font color=green><em>Oryctes rhinoceros</em></font> (Linnaeus, 1758)
+									</ul>
+								</ul>
+							</ul>
+						</ul>
+					</ul>
+				</section>
+
+				<section>
+					<em>Oryctes boas</em><br>
+					<img class="r-stretch" src="../images/oryctes_boas.jpg">
+				</section>
+
+				<section>
+					<em>Oryctes gnu</em><br>
+					<img class="r-stretch" src="../images/oryctes_gnu.jpg">
+				</section>
+
+				<section>
+					<em>Oryctes monoceros</em><br>
+					<img class="r-stretch" src="../images/oryctes_monoceros.jpg">
+				</section>
+
+				<section>
+					<em>Oryctes nasicornis</em><br>
+					<img class="r-stretch" src="../images/oryctes_nasicornis.jpg">
+				</section>
+
+				<section>
+					<em>Oryctes elegans</em><br>
+					<img class="r-stretch" src="../images/oryctes_elegans.jpg">
+				</section>
+
+				<section>
+					<em>Oryctes rhinoceros</em><br>
+					<img class="r-stretch" src="../images/oryctes_rhinoceros.jpg">
+				</section>
+
+		
+				<section><h2>BIOLOGY:<BR>GEOGRAPHIC DISTRIBUTION</h2></section> 
+				
+				<section>
+					<video class="r-stretch" auto="true" data-src="../videos/crb_distribution.webm">
+				</section>
+
+				<section>
+					<img class="r-stretch" src="../images/timeline.png">
+				</section>
+
+				<section><h2>CRB BIOLOGY:<br>LIFE CYCLE AND POPULATION DYNAMICS</h2></section>
+			-->
+				
+				<!-- life cycle 
+				<section>
+					<img class="r-stretch" src="../slides_from_odp/slide-08.png">
+					<aside class="notes">
+						Grubs feed only on dead vegetation and do no damage.
+					</aside>
+				</section>
+			-->
+				
+				<!-- potential population growth 
+				<section>
+					<img class="r-stretch" src="../slides_from_odp/slide-09.png">
+				</section>
+
+				</section>
+				grubs in breeding site
+				<section>
+					<img class="r-stretch" src="../images/larvae_in_coconut_logs.jpg">
+				</section>
+				
+				<section>
+					<img class="r-stretch" src="../images/breeding_site2.png">
+				</section>
+
+				<section>
+					<img class="r-stretch" src="../images/breeding_site3.png">
+				</section>
+			-->
+				
+				<!-- bore hole
+				<section>
+					<img class ="r-stretch" src="../slides_from_odp/slide-11.png">
+				</section>
+			-->
+
+				<!-- v-shaped cuts
+				<section>
+					<img class="r-stretch" src="../slides_from_odp/slide-10.png">
+				</section>
+			-->
+
+				<!-- damaged palms
+				<section>
+					<img class ="r-stretch" src="../slides_from_odp/slide-12.png">
+				</section>
+			-->
+				
+				<!-- feedback cycle 1
+				<section>
+					<img class ="r-stretch" src="../slides_from_odp/slide-13.png">
+				</section>
+			-->
+				
+				<!-- feedback cycle 2 
+				<section>
+					<img class ="r-stretch" src="../slides_from_odp/slide-14.png">
+				</section>
+			-->
+				
+				<!-- climate change connection 1 
+				<section>
+					Coastal coconuts Vanuatu<br>
+					<img class ="r-stretch" src="../images/vanuatu_coconuts.jpg">
+				</section>
+			-->
+
+				<!-- climate change connection 2 
+				<section>
+					Coastal coconuts Majuro<br>
+					<img class="r-stretch" src="../images/coastal_coconuts.png"> 
+				</section>
+			-->
+
+				<!-- CRB MONITORING: PHEROMONE TRAPS 
+
+				<section><h2>MONITORING:<br>PHEROMONE TRAPS</h2></section>
+
+				<section>
+					<img class="r-stretch" src="../images/pheromone_trap_dev.png">
+				</section>
+
+				<section>
+					<img class="r-stretch" src="../images/tekken.png">
+				 </section>
+
+				 <section>
+					<img class="r-stretch" src="../images/defence.png">
+				 </section>
+
+				 <section>
+					<img class="r-stretch" src="../images/defence_closeup.png">
+				 </section>
+
+				 <section>
+					<p>Pheromone traps on Guam did not result in significant population reduction.
+					The recapture rate for 567 marked beetles released in the vicinity of pheromone traps was only 11%.</p>
+				 </section>
+
+				 <section>
+					<p style="text-align: left">The relationship between pheromone trap catch and CRB population density is often assumed to be linear. However, it is probably nonlinear.</p>
+					<img class="r-stretch" src="../images/trapcatch_vs_density.png">
+				 </section>
+				-->
+
+				<!-- TODO: Get Dumaguete slide -->
+
+				<!--
+				 <section>
+					<p style="align: left;">Here's a short presentation with an audio track which explains why CRB pheromone trap catch may decrease at high population levels (3m 10s):</p>
+					<p style="font-size: 0.5em;"><a href="https://aubreymoore.github.io/trap-catch-model/reveal.js/plumes_audio.html">https://aubreymoore.github.io/trap-catch-model/reveal.js/plumes_audio.html</a></p>
+				 </section>
+
+
+
+				<section>pheromone traps 1
+					<h4>Pheromone Trap Catch May Not Be Correlated with Population Density</h4>
+					Press S to see speaker notes.
+					<aside class="notes">
+						In the next few slides, I am going to explain why CRB pheromone trap catch rate may not correlate with population density.
+					</aside>
+				</section>
+
+				<section>pheromone traps 2
+					<h4>Simple Model</h4>
+					<img src="../images/linear_model.png">
+					<aside class="notes">
+						The relationship between pheromone trap catch and population density is not known. However, many people assume a simple linear model.
+					</aside>
+				</section>
+
+				<section>pheromone traps 3
+					<h4>Pheromone trap and plume</h4>
+					<img src="../images/source0.gif">
+					<aside class="notes">
+						Let's see if we can develop a better model by looking at how insect pheromone traps work.
+						The red dot in this simulation represents a trap releasing pheromone molecules which disperse and are blown downwind. In this case, the wind is from the north. Insects search for pheromone plumes by flying at right angle to the wind. When they detect pheromone molecules, they turn upwind, following the plume to its source.
+					</aside>
+				</section>
+
+				<section>pheromone traps 4
+					<h4>Competition from natural pheromone sources<br>(low population density)</h4>
+					<aside class="notes"></aside>
+					<img src="../images/source2.gif">
+					<aside class="notes">
+						Here we have added two natural pheromone sources represented as green dots. In the case of CRB, these are male adults which release the same aggregation pheromone that is used to bait traps. As you can see, even at low population levels, natural pheromone sources compete with traps. Beetles flying across the wind in the bottom half of this simulation will encounter plumes from the natural sources and fly upwind towards them rather than the trap.
+					</aside>
+				</section>
+			
+				<section>pheromone traps 5
+					<h4>Confusion from natural pheromone sources<br>(high population density)</h4>
+					<img src="../images/source25.gif">
+					<aside class="notes">
+						At high population densities, the air becomes saturated with pheromone and insects can no longer follow plumes to sources. This phenomenon is well known. A control tactic for several insects called "mating disruption" involves saturating the air with synthetic pheromone. This has not been tried with CRB. 
+					</aside>
+				</section>
+
+				<section>pheromone traps 6
+					<h4>Improved Model</h4>
+					<img src="../images/trapcatch_vs_density.png">
+					<aside class="notes">
+						We can use what we know about how to impoved theoretical model of the relationship between trap catch and population density. At low population densities, trap catch increases with population density. However, at high population densities, trap catch is reduced because target insects follow plumes to natural sources instead of the traps. At extremely high population densities, target insects are unable to navigate up plumes to sources trap catch rate falls towards zero. 
+					</aside>
+				</section>
+
+				<section>pheromone traps 7
+					<h4>Evidence of reduced pheromone trap catch at high population density</h4>
+					<img src="../images/evidence1_resized.png" style="max-height: 50%;"/><br>
+					<p style="font-size:20px">"Our results show that trap catches not only level off at high density but actually decline at extremely high density." 
+					<a href="https://typeset.io/pdf/development-of-a-combined-sex-pheromone-based-monitoring-2yjusy786s.pdf">Jones et al. 2009</a></p>
+					<aside class="notes">
+						Is there any evidence to support this nonlinear model?
+						There is. A quick search on Google found this example. It is a journal article on pheromone trapping of forest tent caterpiller moth where the authors report that "Our results show that trap catches not only level off at high density but actually decline at extremely high density." 
+					</aside>
+				</section>
+
+				<section>pheromone traps 8
+					<h4>Conclusion</h4>
+					<ul>
+						<li>CRB pheromone traps are very usefull for detecting CRB at low population levels.</li>
+						<li>However, trap catch and population density may be uncorrelated at high population levels.</li>
+						<li>Perhaps other methods such as damage surveys and advanced sensors should be used for monitoring changes in CRB population density.</li>
+					</ul>
+					<aside class="notes" data-markdown>
+						CRB pheromone traps are very usefull for detecting CRB at low population levels.
+						However, trap catch and population density may be uncorrelated at high population levels.
+						Perhaps other methods for determining CRB population levels such as damage surveys and advanced sensors should be developed for monitoring changes in CRB population density.
+						Advanced sensors could include optical and acoustic insect detectors, artificial noses, eDNA, etc.
+					</aside>
+				</section>
+				-->
+
+				<section>
+					<p style="font-size: 0.5em;">View online at <a href="https://aubreymoore.github.io/Guam-CRB-Damage-Map-2023-09/webmap">https://aubreymoore.github.io/Guam-CRB-Damage-Map-2023-09/webmap</a></p>
+					<img class="r-stretch" src="../images/webmap.png">
+				</section>
+
+				<section><img class="r-stretch" src="../images/crb_damage_trends.png"></section>
+		
+				<section>
+					<img class ="r-stretch" src="../slides_from_odp/slide-18.png">
+				</section>
+				
+				<section>
+					<img class ="r-stretch" src="../slides_from_odp/slide-19.png">
+				</section>
+				
+				<section>
+					<img class ="r-stretch" src="../slides_from_odp/slide-20.png">
+				</section>
+
+				<section>
+					<video class="r-stretch" loop="true" auto="true" data-src="../videos/screencast_h772.mp4">
+				</section>
+
+				<section>
+					<h4>Comment on CRB Population Monitoring</h4>
+					<p style="text-align: left">We need alternate methods to automate monitoring CRB populations: perhaps using advanced remote sensors (imaging, acoustics, RADAR, LIDAR, eDNA, electronic noses, etc.)</p>
+				</section>
+
+
+				<section><h2>CRB MANAGEMENT:<br>ERADICATION</h2></section>
+
+				<!-- how to eradicate CRB
+				<section>
+					<img class ="r-stretch" src="../slides_from_odp/slide-15.png">
+				</section>
+			-->
+
+				
+				<section><h2>CRB MANAGEMENT:<br>SANITATION</h2></section>
+
+				<!-- detector dogs, detector beetles
+				<section>
+					<img class ="r-stretch" src="../slides_from_odp/slide-22.png">
+				</section>
+			-->
+
+			<!--	
+				<section><h2>CRB MANAGEMENT:<br>BIOLOGICAL CONTROL</h2></section>
+
+				<section>
+					<img class ="r-stretch" src="../images/ornv.png">
+				</section>
+			-->
+
+				<!-- Beford Fiji graph
+				<section>
+					<img class ="r-stretch" src="../slides_from_odp/slide-17.png">
+				</section>
+			-->
+
+				<!-- Sean's paper on discovery of OrNV resistant genotype
+				<section>
+					<p>CRB populations currently invading Pacific Islands are resistant to OrNV</p>
+					<img class="r-stretch" src="../images/sean_paper.png">
+				</section>
+			-->
+				
+				<!-- Characteristics of CRB-G - hide this slide for now
+				<section>
+					<img class="r-stretch" src="../slides_from_odp/slide-07.png">
+				</section>
+				-->
+				<!--
+				<section>
+					<p>Laboratory bioassays on have failed to find an isolate of OrNV which is an effective biocontrol agent for the Guam CRB population</p>
+					<img class="r-stretch" src="../images/lab.jpg">
+				</section>
+			-->
+				<!--
+				<section><h2>CONCLUDING REMARKS</h2></section>
+
+				<section>
+					<h4>concluding remarks 1</h4>
+					<p style="text-align: left">Efforts should continue to find support for a well-funded, well-coordinated international project as detailed in the CRB-SAP.</p>
+					<p style="color: yellow">Strategic Action Plan for Coconut Rhinoceros Beetle</p> 
+					<p>Pacific Ecological Security Conference 2022</p>
+					<p>Koror, Palau</p>
+					<p><a href="https://zenodo.org/record/7683206">https://zenodo.org/record/7683206</a></p>
+				</section>
+
+				<section>
+					<h4>concluding remarks 2</h4>
+					<p style="text-align: left">The search for OrNV isolates which can be used as effective, self-sustaining biological control agents for CRB populations on Guam and elsewhere should be continued.</p>
+				</section>
+
+				<section>
+					<img class ="r-stretch" src="../slides_from_odp/slide-23.png">
+				</section>  
+
+
+				<section><h1>EXTRA SLIDES TO FOLLOW</h1></section>
+			-->
+
+				<!--
+				
+				<section>
+					geograpic distribution 1
+					<img class="r-stretch" src="../slides_from_odp/slide-03.png">
+				</section>
+				
+				<section>
+					geograpic distribution 2
+					<img class="r-stretch" src="../slides_from_odp/slide-04.png">
+				</section>
+				
+				<section>
+					geograpic distribution 3
+					<img class="r-stretch" src="../slides_from_odp/slide-05.png">
+				</section>
+
+				-->
+				
+				<!--
+				<section>research priorities
+					<img class ="r-stretch" src="../slides_from_odp/slide-16.png">
+				</section>
+				
+				<section>
+					Aerial pesticide application
+					<img class ="r-stretch" src="../slides_from_odp/slide-21.png">
+				</section>
+				-->
+				
+				<section>
+					<h4>Online CRB Reference Library</h4>
+					<a href="https:/aubreymoore.pythonanywhere.com/crblib">aubreymoore.pythonanywhere.com/crblib</a>
+					<img class="r-stretch" src="../images/crb_reference_library.png">
+				</section>
+
+				<section>
+					<h1>FINIS</h1>
+				</section>
+				
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				autoPlayMedia: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
